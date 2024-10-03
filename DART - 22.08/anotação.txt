@@ -1,0 +1,19 @@
+// não tem inferencia de tipo
+  for (String nome in nomes){
+    print(nome);
+  }
+
+// Tem inferencia de tipo
+for (var nome in nomes){
+    print(nome);
+  }
+
+// o compilador não entende quando tem const
+  void main(){
+  const nomes = ['Pedro', 'Maria', 'João'];
+
+  // for each 
+  for (const nome in nomes){
+    print(nome);
+  }
+}
